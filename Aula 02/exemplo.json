@@ -1,0 +1,11 @@
+{
+    "funcionarios":{
+        "_id": 1,
+        "idFuncionario": 1,
+        "nome": "Carlos",
+        "emails":["carlos1@email.com","carlos2@email.com"],
+        "telefones":[{"ddd":11, "numero":932580079, "descricao":"whatsapp"},
+                    {"ddd":11, "numero":48247257, "descricao":"residencial"}],
+        "departamentos":{"_id":1, "nome":"TI", "localizacao":"campus conceicao"}
+    }
+}
