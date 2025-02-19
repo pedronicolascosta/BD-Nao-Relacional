@@ -4,3 +4,11 @@
 👨‍🏫 Professor: Ricardo Resende de Mendonça<br>
 🤓 Autor: <a href="https://github.com/pedronicolascosta">Pedro Nicolas Costa</a><br>
 <br><br>
+
+## Aulas 📚📝
+- **Aula 01**<br>
+Modelagem de um BD Relacional<br>
+➡️ [Veja Aqui](Aula%2001)<br><br>
+- **Aula 02**<br>
+Exemplo de BD Não Relacional em arquivo JSON<br>
+➡️ [Veja Aqui](Aula%2002)
