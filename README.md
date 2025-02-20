@@ -12,3 +12,6 @@ Modelagem de um BD Relacional<br>
 - **Aula 02**<br>
 Exemplo de BD Não Relacional em arquivo JSON<br>
 ➡️ [Veja Aqui](Aula%2002)
+- **Aula 03**<br>
+Métodos por Incorporação, Referência, Relação Cruzada e Modelagem de BD NoSQL<br>
+➡️ [Veja Aqui](Aula%2003)
