@@ -10,7 +10,7 @@
 ## Tipos de Chaves
 foreign key<br>
 primary key<br>
-master key<br>
+foreign master<br>
 
 ## Método de Incorporação
 Toda vez que buscar dados de outro lugar e copiar esses dados de uma collection e colar em outra é um método de **INCORPORAÇÃO**, ou seja, **INCORPORAR VALORES**<br>
