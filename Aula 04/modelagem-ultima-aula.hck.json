@@ -1,0 +1,388 @@
+{
+  "modelName": "New Model",
+  "collections": [
+    {
+      "GUID": "49946fa6-0282-4415-b85b-9ee588cb7b62",
+      "collectionName": "Funcionarios",
+      "type": "object",
+      "properties": [
+        {
+          "name": "_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "objectId",
+          "GUID": "fca649d5-69df-4d79-9adf-f7065e7dab59",
+          "error": {}
+        },
+        {
+          "name": "nome",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "b01a51e7-cbc8-428c-8502-a67c0888dd7a",
+          "error": {}
+        },
+        {
+          "name": "depart",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "document",
+          "properties": [
+            {
+              "name": "_id",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "type": "objectId",
+              "GUID": "e2358d76-3336-4234-8e54-f8f3464fc90a",
+              "error": {},
+              "relationshipType": "Foreign Key",
+              "foreignCollection": "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+              "foreignField": [
+                "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+                "5269b123-01c9-4179-b274-d4e48860fb52"
+              ],
+              "parentRelationship": "f50d3dbb-7e68-4773-8ac4-59aa12cc43a6"
+            },
+            {
+              "name": "nome",
+              "hackoladeMeta": {},
+              "isActivated": true,
+              "type": "string",
+              "GUID": "14e93df9-3ed2-42f1-bd8a-e9dcbe2cde12",
+              "error": {},
+              "relationshipType": "Foreign Master",
+              "foreignCollection": "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+              "foreignField": [
+                "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+                "e75fe0af-75d9-473a-a902-b1606ab8adc2"
+              ],
+              "parentRelationship": "f421ad00-b405-4e73-ba1d-2f2be676084e"
+            }
+          ],
+          "additionalProperties": false,
+          "GUID": "4d0b7ed9-1135-4db6-becc-72a31422568b",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "80e9e938-ce1c-4732-9377-5ef5b02b7ad5"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "collectionUsers": [],
+      "indexes": [],
+      "collation": {},
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "bucketId": "81ae3f59-a3c5-4137-af1c-4319786add6b"
+    },
+    {
+      "GUID": "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+      "collectionName": "Departamentos",
+      "type": "object",
+      "properties": [
+        {
+          "name": "_id",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "objectId",
+          "GUID": "5269b123-01c9-4179-b274-d4e48860fb52",
+          "error": {},
+          "childRelationships": [
+            "f50d3dbb-7e68-4773-8ac4-59aa12cc43a6"
+          ]
+        },
+        {
+          "name": "nome",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "e75fe0af-75d9-473a-a902-b1606ab8adc2",
+          "error": {},
+          "childRelationships": [
+            "f421ad00-b405-4e73-ba1d-2f2be676084e"
+          ]
+        },
+        {
+          "name": "locali",
+          "hackoladeMeta": {},
+          "isActivated": true,
+          "type": "string",
+          "GUID": "275f6b49-fc96-4648-80d3-370196e43a65",
+          "error": {}
+        }
+      ],
+      "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "9b69a31b-b76f-4c04-a146-9e25b7fd8283"
+      },
+      "isActivated": true,
+      "additionalProperties": false,
+      "validationLevel": "Off",
+      "validationAction": "Warn",
+      "storageEngineName": "WiredTiger",
+      "collectionUsers": [],
+      "indexes": [],
+      "collation": {},
+      "sharding": {
+        "unique": true,
+        "collation": "null"
+      },
+      "bucketId": "81ae3f59-a3c5-4137-af1c-4319786add6b"
+    }
+  ],
+  "buckets": [
+    {
+      "name": "empresaX",
+      "type": "bucket",
+      "collectionIds": [
+        "49946fa6-0282-4415-b85b-9ee588cb7b62",
+        "83fbc368-0446-41e6-adf9-bf3e71104bd5"
+      ],
+      "backgroundColor": {
+        "r": 216,
+        "g": 0,
+        "b": 115,
+        "a": 1
+      },
+      "show": true,
+      "isActivated": true,
+      "GUID": "81ae3f59-a3c5-4137-af1c-4319786add6b"
+    }
+  ],
+  "views": [],
+  "relationships": [
+    {
+      "name": "fk_Departamentos._id_to_Funcionarios.depart._id",
+      "relationshipType": "Foreign Key",
+      "parentField": [
+        [
+          "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+          "5269b123-01c9-4179-b274-d4e48860fb52"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "49946fa6-0282-4415-b85b-9ee588cb7b62",
+          "4d0b7ed9-1135-4db6-becc-72a31422568b",
+          "e2358d76-3336-4234-8e54-f8f3464fc90a"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+      "childCollection": "49946fa6-0282-4415-b85b-9ee588cb7b62",
+      "GUID": "f50d3dbb-7e68-4773-8ac4-59aa12cc43a6",
+      "hackoladeStyles": {
+        "GUID": "1cdffa1f-6810-4245-b268-50ffa1a47f90",
+        "autoPositioning": true,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1728.0142857142864,
+            "y": 1233.585714285714
+          },
+          {
+            "x": 1728.0142857142864,
+            "y": 1208.585714285714
+          },
+          {
+            "x": 1953.7285714285729,
+            "y": 1208.585714285714
+          },
+          {
+            "x": 1953.7285714285729,
+            "y": 1258.7285714285717
+          }
+        ],
+        "sides": [
+          "top",
+          "top"
+        ]
+      }
+    },
+    {
+      "name": "fk_Departamentos.nome_to_Funcionarios.depart.nome",
+      "relationshipType": "Foreign Master",
+      "parentField": [
+        [
+          "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+          "e75fe0af-75d9-473a-a902-b1606ab8adc2"
+        ]
+      ],
+      "parentCardinality": "1",
+      "childField": [
+        [
+          "49946fa6-0282-4415-b85b-9ee588cb7b62",
+          "4d0b7ed9-1135-4db6-becc-72a31422568b",
+          "14e93df9-3ed2-42f1-bd8a-e9dcbe2cde12"
+        ]
+      ],
+      "isActivated": true,
+      "childCardinality": "0..n",
+      "parentCollection": "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+      "childCollection": "49946fa6-0282-4415-b85b-9ee588cb7b62",
+      "GUID": "f421ad00-b405-4e73-ba1d-2f2be676084e",
+      "hackoladeStyles": {
+        "GUID": "6e8235e3-179e-4708-a97a-ec064637e612",
+        "autoPositioning": false,
+        "type": "Orthogonal",
+        "thickness": 2,
+        "color": "#79c4ff",
+        "dataType": "",
+        "shape": [
+          {
+            "x": 1693.8476190476197,
+            "y": 1378.585714285714
+          },
+          {
+            "x": 1693.8476190476197,
+            "y": 1408.5857142857144
+          },
+          {
+            "x": 1918.8952380952396,
+            "y": 1408.5857142857144
+          },
+          {
+            "x": 1918.8952380952396,
+            "y": 1345.7285714285717
+          }
+        ],
+        "sides": [
+          "bottom",
+          "bottom"
+        ]
+      }
+    }
+  ],
+  "users": [],
+  "diagramViews": [],
+  "idToNameHashTable": {
+    "81ae3f59-a3c5-4137-af1c-4319786add6b": "empresaX",
+    "49946fa6-0282-4415-b85b-9ee588cb7b62": "Funcionarios",
+    "fca649d5-69df-4d79-9adf-f7065e7dab59": "_id",
+    "b01a51e7-cbc8-428c-8502-a67c0888dd7a": "nome",
+    "83fbc368-0446-41e6-adf9-bf3e71104bd5": "Departamentos",
+    "5269b123-01c9-4179-b274-d4e48860fb52": "_id",
+    "e75fe0af-75d9-473a-a902-b1606ab8adc2": "nome",
+    "275f6b49-fc96-4648-80d3-370196e43a65": "locali",
+    "4d0b7ed9-1135-4db6-becc-72a31422568b": "depart",
+    "e2358d76-3336-4234-8e54-f8f3464fc90a": "_id",
+    "14e93df9-3ed2-42f1-bd8a-e9dcbe2cde12": "nome",
+    "f50d3dbb-7e68-4773-8ac4-59aa12cc43a6": "fk_Departamentos._id_to_Funcionarios.depart._id",
+    "f421ad00-b405-4e73-ba1d-2f2be676084e": "fk_Departamentos.nome_to_Funcionarios.depart.nome"
+  },
+  "definitions": {
+    "type": "definitions",
+    "properties": [],
+    "GUID": "e4d498b4-cf54-4c51-a570-93ed4011124e"
+  },
+  "polyglotDefinitions": {
+    "type": "polyglotDefinitions",
+    "properties": [],
+    "GUID": "46e69736-aafd-403f-8cbf-4bbc72fa3cf8"
+  },
+  "externalDefinitions": {
+    "type": "externalDefinitions",
+    "properties": [],
+    "GUID": "62f2e89d-adfc-4097-a5fe-eb2ff46d62cf"
+  },
+  "sources": [],
+  "decorativeSymbols": [],
+  "dbVersion": "v7.x",
+  "dbVendor": "MongoDB",
+  "appTarget": "MONGODB",
+  "creationTS": "2025-02-19T23:50:19.493Z",
+  "GUID": "f5b35827-5611-4e09-8574-419d6fda2c5d",
+  "isLineageEnabled": false,
+  "lastModifTS": "2025-02-20T00:23:24.111Z",
+  "persistenceSchemaVersion": "8",
+  "isCreatedByPlugin": true,
+  "pluginInformation": {
+    "pluginEngineVersion": "1.0.0"
+  },
+  "applicationInformation": {
+    "version": "8.0.1"
+  },
+  "settings": {
+    "centralPane": {
+      "dbLevel": {
+        "erd": [
+          {
+            "GUID": "49946fa6-0282-4415-b85b-9ee588cb7b62",
+            "x": 1625.5142857142864,
+            "y": 1233.585714285714,
+            "width": 205,
+            "height": 145,
+            "color": {}
+          },
+          {
+            "GUID": "83fbc368-0446-41e6-adf9-bf3e71104bd5",
+            "x": 1849.2285714285729,
+            "y": 1258.7285714285717,
+            "width": 209,
+            "height": 87,
+            "color": {}
+          }
+        ],
+        "erdDefinitions": {
+          "erd": [],
+          "rootPath": [],
+          "entities": [],
+          "decorativeSymbols": []
+        },
+        "buckets": [
+          {
+            "x": 1585.5142857142864,
+            "y": 1168.585714285714,
+            "GUID": "81ae3f59-a3c5-4137-af1c-4319786add6b"
+          }
+        ],
+        "collapsedNodes": [],
+        "activeRelationship": "",
+        "activeRelationshipFields": {
+          "childField": [],
+          "parentField": []
+        },
+        "selectedCollections": [],
+        "displayColorPicker": false,
+        "graphView": {
+          "erd": [],
+          "buckets": [],
+          "decorativeSymbols": [],
+          "forceLayout": true,
+          "defaultLinkLength": 300
+        },
+        "diagramViews": [],
+        "decorativeSymbols": [],
+        "nestedCollectionsLayout": "horizontal",
+        "options": [
+          {
+            "autoWidth": false,
+            "autoHeight": false,
+            "GUID": "49946fa6-0282-4415-b85b-9ee588cb7b62"
+          }
+        ],
+        "relationshipUpdateDisabled": false
+      },
+      "collectionLevel": {},
+      "changed": false
+    },
+    "dtDiagram": {
+      "collapsedNodes": [],
+      "shouldDistributeCollections": false
+    }
+  }
+}
