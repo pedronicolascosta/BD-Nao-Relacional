@@ -45,3 +45,5 @@ Neste caso, o atributo endereço será um DOCUMENTO, onde armazenamos vários at
 - Criação da collection Cargos
 - Criação da collection Projetos
 - Relacionamento entre funcionários e cargos e projetos
+<br><br>
+![Captura de tela 2025-02-26 210249](https://github.com/user-attachments/assets/a3838eed-117b-4521-be53-40eb8eb65648)
