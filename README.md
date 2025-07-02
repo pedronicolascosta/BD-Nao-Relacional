@@ -18,3 +18,11 @@ Métodos por Incorporação, Referência, Relação Cruzada e Modelagem de BD No
 - **Aula 04**<br>
 Continuação da Modelagem de um BD NoSQL<br>
 ➡️ [Veja Aqui](Aula%2004)<br><br>
+
+## Trabalhos 💻🛠️
+- **Pesquisa e Seminário**
+Apresentação, guia de instalação e exemplo prático sobre o CassandraDB
+➡️ [Veja Aqui](https://github.com/pedronicolascosta/CassandraDB)<br><br>
+- **Projeto CRUD com MongoDB**
+Desenvolvimento de Front-End + Back-End com API manipulando banco MongoDB
+➡️ [Veja Aqui](https://github.com/pedronicolascosta/LojaVirtual)
