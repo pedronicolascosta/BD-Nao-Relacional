@@ -20,9 +20,9 @@ Continuação da Modelagem de um BD NoSQL<br>
 ➡️ [Veja Aqui](Aula%2004)<br><br>
 
 ## Trabalhos 💻🛠️
-- **Pesquisa e Seminário**
-Apresentação, guia de instalação e exemplo prático sobre o CassandraDB
+- **Pesquisa e Seminário**<br>
+Apresentação, guia de instalação e exemplo prático sobre o CassandraDB<br>
 ➡️ [Veja Aqui](https://github.com/pedronicolascosta/CassandraDB)<br><br>
-- **Projeto CRUD com MongoDB**
-Desenvolvimento de Front-End + Back-End com API manipulando banco MongoDB
+- **Projeto CRUD com MongoDB**<br>
+Desenvolvimento de Front-End + Back-End com API manipulando banco MongoDB<br>
 ➡️ [Veja Aqui](https://github.com/pedronicolascosta/LojaVirtual)
